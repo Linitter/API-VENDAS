@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import CreateProductService from '../services/CreateProductService';
+import CreateProductService from '../services/CreateProductService.1';
 import DeleteProductService from '../services/DeleteProductService';
 import ListProductService from '../services/ListProductService';
 import ShowProductService from '../services/ShowProductService';
