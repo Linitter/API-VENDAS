@@ -10,7 +10,7 @@
     "format": "prettier --write \"src/**/*.{js,ts,json,css,md}\""
   },
   "keywords": [],
-  "author": "",
+  "author": "Linitter <caualinitte07@gmail.com>",
   "license": "ISC",
   "description": "",
   "devDependencies": {
@@ -28,12 +28,16 @@
     "typescript": "^5.4.5"
   },
   "dependencies": {
+    "@types/redis": "^4.0.11",
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "express-async-errors": "^3.1.1",
     "pg": "^8.12.0",
+    "redis": "^4.6.14",
+    "redis-cli": "^2.1.2",
     "reflect-metadata": "^0.2.2",
     "ts-node": "^10.9.2",
     "typeorm": "^0.2.45"
-  }
+  },
+  "repository": "https://github.com/Linitter/Api-Vendas.git"
 }

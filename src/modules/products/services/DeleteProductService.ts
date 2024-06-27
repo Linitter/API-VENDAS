@@ -1,7 +1,6 @@
-import redisCache from '@shared/cache/RedisCache';
 import AppError from '@shared/errors/AppError';
-import { getCustomRepository } from 'typeorm';
 import { ProductsRepository } from '../typeorm/entities/repositories/ProductsRepository';
+import { getCustomRepository } from 'typeorm';
 
 interface IRequest {
   id: string;
@@ -16,9 +15,6 @@ class DeleteProductService {
     if (!product) {
       throw new AppError('Product not found.');
     }
-
-
-    await redisCache.invalidate('api-vendas-PRODUCT_LIST');
 
     await productsRepository.remove(product);
   }
